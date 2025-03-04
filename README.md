@@ -80,7 +80,7 @@ Dhanno is a fully functional ride-booking app, designed as a clone of the popula
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/AbhijeetParashar/dhanno-ride.git
+   git clone https://github.com/AbhijeetParashar/ride-app.git
 
    ```
 
@@ -104,23 +104,31 @@ Dhanno is a fully functional ride-booking app, designed as a clone of the popula
 
 6. Install Expo EAS CLI and log in to your Expo account:
 
-````bash
-npm install -g eas-cli
+```bash
+  npm install -g eas-cli
+
+```
 
 7. Login to your EAS accound
-  ```bash
-  eas login
 
-7. Run the following command to prebuild the project:
+```bash
+eas login
 
- ```bash
- npx expo prebuild
+```
+
+8. Run the following command to prebuild the project:
+
+```bash
+npx expo prebuild --clean
+
+```
 
 8. If using a real device, update the API URLs in the client configuration:
- - Open `src/service/config.js` and modify the `BASE_URL` and `SOCKET_URL` to use your local network IP or hosted URL.
+
+- Open `src/service/config.js` and modify the `BASE_URL` and `SOCKET_URL` to use your local network IP or hosted URL.
 
 9. Start the Server
 
- ```bash
- npm start
-````
+```bash
+npm start
+```
